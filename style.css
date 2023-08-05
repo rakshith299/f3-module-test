@@ -15,6 +15,14 @@
 
 }
 
+@media screen and (min-width: 10px) and (max-width: 500px) {
+    .whole{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+}
+
 .left-cont{
     display: flex;
     flex-direction: column;
@@ -43,9 +51,58 @@
     margin-bottom: 10px;
 }
 
+
+
 .left-top-cont p{
     color: #B8BCCC;
     font-size: 20px;
+}
+
+.img{
+    width: 382px;
+    height: 362px;
+}
+
+@media screen and (min-width: 10px) and (max-width: 600px) {
+    .left-cont{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .left-top-cont h2{
+        color: #575A85;
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    .left-top-cont p{
+        color: #B8BCCC;
+        font-size: 15px;
+    }
+
+    .img{
+        width: 90%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .left-top-cont h2{
+        color: #575A85;
+        font-size: 35px;
+        margin-bottom: 6px;
+    }
+
+    .left-top-cont p{
+        color: #B8BCCC;
+        font-size: 20px;
+    }
+
+    .img{
+        width: 90%;
+        height: 300px;
+    }
 }
 
 .right-cont{
@@ -61,6 +118,7 @@
 .right-cont h2{
     color: #B8BCCC;
     font-size: 30px;
+    text-align: center;
 }
 
 .span-ip-address{
@@ -84,4 +142,54 @@
 
 .get-started-btn:active{
     transform: translateY(4px);
+}
+
+@media screen and (min-width: 10px) and (max-width: 600px) {
+    .right-cont{
+        width: 100%;
+    }
+
+    .right-cont h2{
+        color: #B8BCCC;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .span-ip-address{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .get-started-btn{
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 90px) {
+    .right-cont{
+        width: 100%;
+    }
+
+    .right-cont h2{
+        color: #B8BCCC;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .span-ip-address{
+        color: white;
+        font-size: 25px;
+    }
+    
+    .get-started-btn{
+        width: 130px;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 16px;
+
+    }
 }
